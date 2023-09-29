@@ -1,0 +1,21 @@
+<!-- landing.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Landing Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="user">
+    <h2>Bienvenue, {{ user.name }}</h2>
+    <p>Email: {{ user.email }}</p>
+    <!-- Ajoutez d'autres détails du profil que vous souhaitez afficher -->
+  </div>
+
+  <ion-button expand="full" (click)="signOut()">
+    Se déconnecter
+  </ion-button>
+</ion-content>
